@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="LiquideMobileAutomation ">
+	<test name="Liquide">
+		<parameter name="deviceName" value="Vivo Y20T" />
+		<parameter name="udid" value="1366367318000E1" /> 
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="12" />
+		<parameter name="appPackage"
+			value="life.liquide.app.development" />
+		<parameter name="appActivity"
+			value="life.liquide.app.development.MainActivity" />
+			
+			
+			
+		<classes>
+	   <!-- 	 <class name="life.liquide.test.SignupTest" />
+ <class name="life.liquide.test.LogInTest" /> 
+    	<class name="life.liquide.test.AddCoinsTest" /> 
+    			<class name="life.liquide.test.AskLimoTest" /> 
+    		<class name="life.liquide.test.ScreenersTest" /> 
+    		<class name="life.liquide.test.LiquideOneTest" /> 	
+	
+	  <class name="life.liquide.test.PortfolioDoctorTest" />
+	 	<class name="life.liquide.test.LiquideOneTest" />
+	 		<class name="life.liquide.test.LoginNegativeTest" /> 
+		<class name="life.liquide.test.SignupNegativeTest" />
+	
+		<class name="life.liquide.test.AskLimoTest" /> 
+	<class name="life.liquide.test.InviteNowTest" />
+<class name="life.liquide.test.AddCoinsNegativeTest"/> -->
+<class name="life.liquide.test.LiquideOneTest" />
+		 </classes>
+	</test>
+</suite>
