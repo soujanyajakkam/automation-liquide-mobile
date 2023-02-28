@@ -10,9 +10,7 @@
 			value="life.liquide.app.development" />
 		<parameter name="appActivity"
 			value="life.liquide.app.development.MainActivity" />
-			
-			
-			
+	
 		<classes>
 	   <!-- 	 <class name="life.liquide.test.SignupTest" />
  <class name="life.liquide.test.LogInTest" /> 
