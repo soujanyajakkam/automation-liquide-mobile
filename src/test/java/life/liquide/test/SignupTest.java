@@ -126,7 +126,7 @@ public class SignupTest extends BaseMobileAutomationTest {
 	signuppage.clickOnStartInvesting();
 	signuppage.clickOnIwillDoItLater();
 	
-	signuppage .clickOnButtonLogOut();
+	//signuppage .clickOnButtonLogOut();
 	Assert.assertEquals(signuppage.textGetStarted(), expectedAssertionsProp.getProperty("getstrted.txt"));
 	System.out.println("Get Started is expected – Assert passed");
 	

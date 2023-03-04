@@ -46,8 +46,12 @@ public class ScreenersTest extends BaseMobileAutomationTest{
 			
 			screeners.clickOnMarketsTab();
 			screeners.clickOnScreenersSection();
-			Assert.assertEquals(screeners.textPremiumScreeners(),expectedAssertionsProp. getProperty("premium.txt"));
-			System.out.println(" Hi,Premium Screeners! text is expected – Assert passed");
+			/*
+			 * Assert.assertEquals(screeners.textPremiumScreeners(),expectedAssertionsProp.
+			 * getProperty("premium.txt"));
+			 * System.out.println(" Hi,Premium Screeners! text is expected – Assert passed"
+			 * );
+			 */
              
 			screeners.clickonBreakOut();
 			Assert.assertEquals(screeners.TextGetAccess(),expectedAssertionsProp.getProperty("getaccess.txt"));

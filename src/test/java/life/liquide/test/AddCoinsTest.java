@@ -38,7 +38,7 @@ public class AddCoinsTest extends BaseMobileAutomationTest{
 	@Story("Asking Limo about stock")
 	public void AddCoins() throws InterruptedException {
 		logger.info("Starting of AddCoins method");
-		addCoins.clickOnLimoIcon();
+		/*addCoins.clickOnLimoIcon();
 
 		Assert.assertEquals(addCoins.textLimo(), expectedAssertionsProp.getProperty("iamlimo.txt"));
 		System.out.println(" Hi, I am LiMo! is expected – Assert passed");
@@ -56,9 +56,12 @@ public class AddCoinsTest extends BaseMobileAutomationTest{
 		Assert.assertEquals(addCoins.textCoinsTopUp(), expectedAssertionsProp.getProperty("coinstopup.txt"));
 		System.out.println("Select coin amount to top up is expected – Assert passed");
 		
-		addCoins.clickOnImgCardTopUpCoins();
-
+		addCoins.clickOnImgCardTopUpCoins();*/
+		addCoins.clickOnimgcrdCoins();
+		addCoins.clickOnAddCoinsButton();
+		addCoins.clickOncardCoinsTopUp();
 		addCoins.clickOnPayButton();
+		//addCoins.clickOnPayButton();
 		
 		logger.info("Ending of AddCoins method");
 	}

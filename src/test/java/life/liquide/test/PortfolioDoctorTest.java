@@ -36,62 +36,17 @@ public class PortfolioDoctorTest extends BaseMobileAutomationTest {
 		this.portfolioNegative = new PortfolioDoctorNegativePage(this.getMobileDriver(udid));
 		logger.info("Ending of initClass method in LandingPage");
 	}
-
-	/*@Test(priority = 1, description = "Verifying AppointmentBooking funtionality")
-
-	@Parameters({ "devicename" })
-
-	@Description("Test Description: Verifying AppointmentBooking funtionality")
-
-	@Story("Verifying AppointmentBooking funtionality")
-	public void PortfolioDoctorAppointmentBooking() throws InterruptedException {
-		logger.info("Starting of PortfolioDoctorAppointmentBooking method");
-
-		portfolio.clickOnPortfolioReviewimgcard();
-		Assert.assertEquals(portfolio.textSEBIExpertAdvisor(), expectedAssertionsProp.getProperty("sebi.txt"));
-		System.out.println(" Your 1-on-1 with  SEBI registered investment advisor text is expected – Assert passed");
-
-		portfolio.clickonBookAnAppointmentButton();
-		Assert.assertEquals(portfolio.textLiquideDev(), expectedAssertionsProp.getProperty("liquidedev.txt"));
-		System.out.println(" Liquide Dev text is expected – Assert passed");
-
-		portfolio.clickonAcceptCookiesButton();
-		portfolio.clickonOneSlot();
-		portfolio.clickOnRequestBookingButton();
-
-		portfolio.clickOnPayButton();
-		portfolio.clickOnProceed999Button();
-		portfolio.EnterCardDetails(testDataProp.getProperty("cardnum"), testDataProp.getProperty("cardexpiry"),
-				testDataProp.getProperty("cvv"));
-		portfolio.clickOnPayNowButton();
-
-		portfolio.clickOnPayWithoutSavingCard();
-		Thread.sleep(2000);
-
-		portfolio.clickSuccessButton();
-		Thread.sleep(2000);
-
-		portfolio.clickOkayButton();
-		Thread.sleep(2000);
-
-		portfolio.clicckOnBackArrowButton();
-		Thread.sleep(2000);
-
-		logger.info("Ending of PortfolioDoctorAppointmentBooking method");
-	}
-
 	/*
-	 * @Test(priority = 2, description =
-	 * "Verifying AppointmentBooking as a Liquide one user funtionality")
+	 * @Test(priority = 1, description =
+	 * "Verifying AppointmentBooking funtionality")
 	 * 
 	 * @Parameters({ "devicename" })
 	 * 
-	 * @Description("Test Description: Verifying AppointmentBooking as a Liquide one user funtionality"
-	 * )
+	 * @Description("Test Description: Verifying AppointmentBooking funtionality")
 	 * 
-	 * @Story("Verifying AppointmentBooking as a Liquide one userfuntionality")
-	 * public void LiquideOneUserAppointmentBooking() throws InterruptedException {
-	 * logger.info("Starting of LiquideOneUserAppointmentBooking method");
+	 * @Story("Verifying AppointmentBooking funtionality") public void
+	 * PortfolioDoctorAppointmentBooking() throws InterruptedException {
+	 * logger.info("Starting of PortfolioDoctorAppointmentBooking method");
 	 * 
 	 * portfolio.clickOnPortfolioReviewimgcard();
 	 * Assert.assertEquals(portfolio.textSEBIExpertAdvisor(),
@@ -105,45 +60,88 @@ public class PortfolioDoctorTest extends BaseMobileAutomationTest {
 	 * System.out.println(" Liquide Dev text is expected – Assert passed");
 	 * 
 	 * portfolio.clickonAcceptCookiesButton(); portfolio.clickonOneSlot();
-	 * portfolio.clickOnRequestBookingButton(); portfolio.clicckOnConfirmButton();
-	 * portfolio.clickOkayButton(); portfolio.clicckOnBackArrowButton();
-	 * 
-	 * logger.info("Ending of LiquideOneUserAppointmentBooking method"); }
-	 * 
-	 * @Test(priority = 3, description =
-	 * "Checking the Negative Flow of the portfoliodoctor")
-	 * 
-	 * @Parameters({ "devicename" })
-	 * 
-	 * @Description("Test Description: Checking the Negative Flow of the portfoliodoctor"
-	 * )
-	 * 
-	 * @Story(" Checking the Negative Flow of the portfoliodoctor") public void
-	 * NegativeFlow() throws InterruptedException {
-	 * logger.info("Starting of NegativeFlow method");
-	 * 
-	 * portfolioNegative.clickOnPortfolioReviewimgcard();
-	 * Assert.assertEquals(portfolioNegative.textSEBIExpertAdvisor(),
-	 * expectedAssertionsProp.getProperty("sebi.txt")); System.out.
-	 * println(" Your 1-on-1 with  SEBI registered investment advisor text is expected – Assert passed"
-	 * );
-	 * 
-	 * portfolioNegative.clickOnLiquideOneimgCrd();
-	 * portfolio.clickonBookAnAppointmentButton();
-	 * portfolio.clickonBookAnAppointmentButton();
-	 * Assert.assertEquals(portfolio.textLiquideDev(),
-	 * expectedAssertionsProp.getProperty("liquidedev.txt"));
-	 * System.out.println(" Liquide Dev text is expected – Assert passed");
-	 * 
-	 * portfolio.clickonAcceptCookiesButton(); portfolio.clickonOneSlot();
 	 * portfolio.clickOnRequestBookingButton();
-	 * portfolioNegative.clickOnUploadPortfolio();
-	 * portfolioNegative.clickOnUpload(); portfolioNegative.uploadimages();
-	 * portfolioNegative.uploadDocuments();
-	 * portfolioNegative.uploadMultipleDocumentsAtaTime();
 	 * 
-	 * logger.info("Ending of NegativeFlow method"); }
+	 * portfolio.clickOnPayButton(); portfolio.clickOnProceed999Button();
+	 * portfolio.EnterCardDetails(testDataProp.getProperty("cardnum"),
+	 * testDataProp.getProperty("cardexpiry"), testDataProp.getProperty("cvv"));
+	 * portfolio.clickOnPayNowButton();
+	 * 
+	 * portfolio.clickOnPayWithoutSavingCard(); Thread.sleep(2000);
+	 * 
+	 * portfolio.clickSuccessButton(); Thread.sleep(2000);
+	 * 
+	 * portfolio.clickOkayButton(); Thread.sleep(2000);
+	 * 
+	 * portfolio.clicckOnBackArrowButton(); Thread.sleep(2000);
+	 * 
+	 * logger.info("Ending of PortfolioDoctorAppointmentBooking method"); }
 	 */
+
+	
+	  @Test(priority = 2, description =
+	  "Verifying AppointmentBooking as a Liquide one user funtionality")
+	  
+	  @Parameters({ "devicename" })
+	  
+	  @Description("Test Description: Verifying AppointmentBooking as a Liquide one user funtionality"
+	  )
+	  
+	  @Story("Verifying AppointmentBooking as a Liquide one userfuntionality")
+	  public void LiquideOneUserAppointmentBooking() throws InterruptedException {
+	  logger.info("Starting of LiquideOneUserAppointmentBooking method");
+	  
+	  portfolio.clickOnPortfolioReviewimgcard();
+	  Assert.assertEquals(portfolio.textSEBIExpertAdvisor(),
+	  expectedAssertionsProp.getProperty("sebi.txt")); System.out.
+	  println(" Your 1-on-1 with  SEBI registered investment advisor text is expected – Assert passed"
+	  );
+	  
+	  portfolio.clickonBookAnAppointmentButton();
+	  Assert.assertEquals(portfolio.textLiquideDev(),
+	  expectedAssertionsProp.getProperty("liquidedev.txt"));
+	  System.out.println(" Liquide Dev text is expected – Assert passed");
+	  
+	  portfolio.clickonAcceptCookiesButton(); portfolio.clickonOneSlot();
+	  portfolio.clickOnRequestBookingButton(); portfolio.clicckOnConfirmButton();
+	  portfolio.clickOkayButton(); portfolio.clicckOnBackArrowButton();
+	  
+	  logger.info("Ending of LiquideOneUserAppointmentBooking method"); }
+	  
+	  @Test(priority = 3, description =
+	  "Checking the Negative Flow of the portfoliodoctor")
+	  
+	  @Parameters({ "devicename" })
+	  
+	  @Description("Test Description: Checking the Negative Flow of the portfoliodoctor"
+	  )
+	  
+	  @Story(" Checking the Negative Flow of the portfoliodoctor") public void
+	  NegativeFlow() throws InterruptedException {
+	  logger.info("Starting of NegativeFlow method");
+	  
+	  portfolioNegative.clickOnPortfolioReviewimgcard();
+	  Assert.assertEquals(portfolioNegative.textSEBIExpertAdvisor(),
+	  expectedAssertionsProp.getProperty("sebi.txt")); System.out.
+	  println(" Your 1-on-1 with  SEBI registered investment advisor text is expected – Assert passed"
+	  );
+	  
+	  portfolioNegative.clickOnLiquideOneimgCrd();
+	  portfolio.clickonBookAnAppointmentButton();
+	  portfolio.clickonBookAnAppointmentButton();
+	  Assert.assertEquals(portfolio.textLiquideDev(),
+	  expectedAssertionsProp.getProperty("liquidedev.txt"));
+	  System.out.println(" Liquide Dev text is expected – Assert passed");
+	  
+	  portfolio.clickonAcceptCookiesButton(); portfolio.clickonOneSlot();
+	  portfolio.clickOnRequestBookingButton();
+	  portfolioNegative.clickOnUploadPortfolio();
+	  portfolioNegative.clickOnUpload(); portfolioNegative.uploadimages();
+	  portfolioNegative.uploadDocuments();
+	  portfolioNegative.uploadMultipleDocumentsAtaTime();
+	  
+	  logger.info("Ending of NegativeFlow method"); }
+	 
 	@Test(priority = 4, description = "Verifying AppointmentBooking funtionality when user have enough coins")
 
 	@Parameters({ "devicename" })

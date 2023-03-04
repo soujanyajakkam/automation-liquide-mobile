@@ -7,8 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import io.appium.java_client.AppiumDriver;
 
 public class TradePage extends BaseAutomationPage{
-
-	
 	
 		private static final Logger logger = Logger.getLogger(TradePage.class.getName());
 
@@ -47,8 +45,6 @@ public class TradePage extends BaseAutomationPage{
 		@FindBy(xpath = "//button[contains(text(),'Confirm Order')] ")
 		private WebElement btnConfirmOrder;
 		
-
-
 		public TradePage(AppiumDriver driver) {
 			super(driver);
 		}

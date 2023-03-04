@@ -36,13 +36,13 @@ public class InviteFriendPage extends BaseAutomationPage {
 	@FindBy(xpath = "//android.widget.TextView[@text = 'Copy code']")
 	private WebElement btnCopycode;
 
-	@FindBy(xpath = "//android.view.ViewGroup[6]//android.view.View")
+	@FindBy(xpath = "//android.widget.TextView[@text = 'Invite Now']")
 	private WebElement btnInviteNow;
 
 	@FindBy(xpath = "//android.widget.RelativeLayout/android.widget.TextView")
 	private WebElement drag;
 
-	@FindBy(xpath = "//android.widget.TextView[@text = 'Gmail']")
+	@FindBy(xpath = "//android.widget.LinearLayout[2]/android.widget.TextView[@text = 'Gmail']")
 	private WebElement crdGmail;
 
 	@FindBy(xpath = "//android.view.ViewGroup/android.widget.EditText")
@@ -126,10 +126,16 @@ public class InviteFriendPage extends BaseAutomationPage {
 	
 	public void swipeup() {
 		logger.info("Starting swipeup method");
-		TouchActions action = new TouchActions(driver);
-		action.scroll(drag, 109, 997);
-		
-		action.perform();
+
+		  driver.findElement(AppiumBy.
+		  androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true))" +
+		  ".scrollIntoView(new UiSelector().text(\"Gmail\"))"));
+		/*
+		 * TouchActions action = new TouchActions(driver); action.scroll(drag, 109,
+		 * 997);
+		 * 
+		 * action.perform();
+		 */
 		//clickOnElement(drag);
 		//swipeUpAction(102,99,997,737);
 		//slider(drag,102);

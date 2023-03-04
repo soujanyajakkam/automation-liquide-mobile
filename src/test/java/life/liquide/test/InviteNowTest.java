@@ -50,7 +50,7 @@ public class InviteNowTest extends BaseMobileAutomationTest {
 		logger.info("Starting of InviteFriend method");
 
 		
-		 // inviteFriend.clickOnInviteNow();
+		 //inviteFriend.clickOnInviteNow();
 		  
 			/*
 			 * Assert.assertEquals(inviteFriend.textInvite(),expectedAssertionsProp.
@@ -69,7 +69,7 @@ public class InviteNowTest extends BaseMobileAutomationTest {
 
 		inviteFriend.clickOnCopyCodeButton();
 		inviteFriend.clickOnInviteNowButton();
-        inviteFriend.swipeup();
+       // inviteFriend.swipeup();
 		Thread.sleep(10000);
         inviteFriend.enterEmailId(testDataProp.getProperty("email"));
         inviteFriend.clickOnSendButton();

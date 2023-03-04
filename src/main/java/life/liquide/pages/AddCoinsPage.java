@@ -76,6 +76,18 @@ public class AddCoinsPage extends BaseAutomationPage {
 	@FindBy(xpath = "//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.view.View[1]")
 	private WebElement btnGotIt;
 	
+	@FindBy(xpath="//android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[4]//android.widget.ImageView")
+	private WebElement imgCardAddCoins;
+	
+	@FindBy(xpath="//android.view.ViewGroup[4]/android.view.ViewGroup//android.view.View")
+	private WebElement btnAddCoins;
+	
+	@FindBy(xpath="//android.widget.TextView[@text = '50']")
+	private WebElement imgcardCoinTopUp;
+	
+	@FindBy(xpath="//android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.TextView")
+	private WebElement btnPay;
+	
 	public AddCoinsPage(AppiumDriver driver) {
 		super(driver);
 	}
@@ -238,5 +250,30 @@ public class AddCoinsPage extends BaseAutomationPage {
 		clickOnElement(btnGotIt);
 
 		logger.info("Ending clickOnGotItButton method");
+	}
+	public void clickOnimgcrdCoins() {
+		logger.info("Starting clickOnimgcrdCoins method");
+
+		clickOnElement(imgCardAddCoins);
+
+		logger.info("Ending clickOnimgcrdCoins method");
+	}
+
+
+	public void clickOnAddCoinsButton() {
+		logger.info("Starting clickOnAddCoinsButton method");
+
+		clickOnElement(btnAddCoins);
+
+		logger.info("Ending clickOnAddCoinsButton method");
+	}
+
+	
+	public void clickOncardCoinsTopUp() {
+		logger.info("Starting clickOncardCoinsTopUp method");
+
+		clickOnElement(imgcardCoinTopUp);
+
+		logger.info("Ending clickOncardCoinsTopUp method");
 	}
 }

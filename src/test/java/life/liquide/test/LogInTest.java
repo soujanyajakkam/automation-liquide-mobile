@@ -51,7 +51,7 @@ public class LogInTest extends BaseMobileAutomationTest {
 	@Story("Verifying Welcome page")
 	public void testLogin() throws InterruptedException {
 		logger.info("Starting of testLogin method");
-		
+		Thread.sleep(10000);
 		loginpage.clickOnGetStartedButton();
 		Assert.assertEquals(loginpage.getEnterPhoneNumberScreen(),
 				expectedAssertionsProp.getProperty("Enteryourphonenumber.text"));
